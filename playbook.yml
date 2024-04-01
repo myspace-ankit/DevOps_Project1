@@ -1,8 +1,8 @@
 ---
 - name: Docker Installation
   become: true
-  hosts: slave1
-  remote_user: slave1 
+  hosts: kslave1
+  remote_user: kslave1 
   tasks:
     - name: Uninstall old version
       apt:
