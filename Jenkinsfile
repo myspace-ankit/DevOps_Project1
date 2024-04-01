@@ -34,7 +34,7 @@ pipeline{
               docker container stop project1_demo
               docker container rm -f project1_demo
               docker image rmi -f project1_demo
-              cd /home/slave1/docker
+              cd /home/kslave1/docker
               docker image build -t project1_demo .
               ''',
             execTimeout: 120000, 
