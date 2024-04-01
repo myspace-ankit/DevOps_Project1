@@ -1,7 +1,7 @@
 ---
 - name: Docker Installation
   become: true
-  hosts: kslave1
+  hosts: 172.31.10.138
   remote_user: kslave1 
   tasks:
     - name: Uninstall old version
