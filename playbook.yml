@@ -2,7 +2,7 @@
 - name: Docker Installation
   become: true
   hosts: 172.31.10.138
-  remote_user: kslave1 
+  remote_user: edureka 
   tasks:
     - name: Uninstall old version
       apt:
