@@ -5,7 +5,7 @@ pipeline{
       agent any
       steps{
         sh '''wget https://apt.puppetlabs.com/puppet8-release-jammy.deb
-              sudo dpkg -S -i puppet8-release-jammy.deb
+              sudo apt-get install puppet8-release-jammy.deb
               sudo apt-get update -y
               sudo apt-get install puppet-agent -y'''
       }
