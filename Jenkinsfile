@@ -15,7 +15,7 @@ pipeline{
       steps{
         git 'https://github.com/myspace-ankit/DevOps_Project1.git'
         dir('.') {
-          sh ' sudo ansible-playbook playbook.yml -i inventory.txt'
+          sh ' sudo ansible-playbook playbook.yml -i inventory'
         }
       }       
     }
